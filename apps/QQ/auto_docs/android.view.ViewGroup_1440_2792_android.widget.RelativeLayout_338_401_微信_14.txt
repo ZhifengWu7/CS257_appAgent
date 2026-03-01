@@ -1,0 +1,1 @@
+{'tap': 'The UI element opens the WeChat app and navigates to the login screen if the user is not already logged in.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

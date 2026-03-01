@@ -1,0 +1,1 @@
+{'tap': 'The UI element navigates to a menu with different features and options, such as games and shopping.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

@@ -1,0 +1,5 @@
+tap(3):::android.view.ViewGroup_168_168_com.google.android.youtube.id_menu_item_view_搜索_0
+text(2:sep:"MrBeast"):::com.google.android.youtube.id_search_box_com.google.android.youtube.id_search_edit_text_0
+tap(4):::com.google.android.youtube.id_results_recycler_view_com.google.android.youtube.id_linearLayout_0
+tap(14):::android.view.ViewGroup_1440_546_android.view.ViewGroup_664_126_订阅“MrBeast野兽先生”。_2
+stop

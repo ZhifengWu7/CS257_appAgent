@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will initiate a search for the selected query.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
