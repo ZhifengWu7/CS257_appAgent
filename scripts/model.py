@@ -102,7 +102,8 @@ def parse_explore_rsp(rsp):
     try:
         observation = re.findall(r"Observation: (.*?)$", rsp, re.MULTILINE)[0]
         think = re.findall(r"Thought: (.*?)$", rsp, re.MULTILINE)[0]
-        act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0]
+        # act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0]
+        act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0].strip().strip("`")
         last_act = re.findall(r"Summary: (.*?)$", rsp, re.MULTILINE)[0]
         print_with_color("Observation:", "yellow")
         print_with_color(observation, "magenta")
@@ -146,7 +147,8 @@ def parse_grid_rsp(rsp):
     try:
         observation = re.findall(r"Observation: (.*?)$", rsp, re.MULTILINE)[0]
         think = re.findall(r"Thought: (.*?)$", rsp, re.MULTILINE)[0]
-        act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0]
+        # act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0]
+        act = re.findall(r"Action: (.*?)$", rsp, re.MULTILINE)[0].strip().strip("`")
         last_act = re.findall(r"Summary: (.*?)$", rsp, re.MULTILINE)[0]
         print_with_color("Observation:", "yellow")
         print_with_color(observation, "magenta")

@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element allows the user to input or edit text content for sharing.', 'text': 'The UI element is used for the user to type a message or description to share a moment.', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

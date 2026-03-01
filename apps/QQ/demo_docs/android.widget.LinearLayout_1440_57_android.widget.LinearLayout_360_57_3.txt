@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will navigate the user to the "Moments" section of the app.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

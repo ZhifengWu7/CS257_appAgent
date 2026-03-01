@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element allows the user to create or share a new post or moment.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

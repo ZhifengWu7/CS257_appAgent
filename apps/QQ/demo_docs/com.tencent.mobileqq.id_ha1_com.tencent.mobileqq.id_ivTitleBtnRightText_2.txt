@@ -1,0 +1,1 @@
+{'tap': "Tapping the UI element will publish the user's post or content.", 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

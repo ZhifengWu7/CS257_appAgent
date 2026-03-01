@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element opens a menu with options for sharing content, such as posting a status or uploading an album.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

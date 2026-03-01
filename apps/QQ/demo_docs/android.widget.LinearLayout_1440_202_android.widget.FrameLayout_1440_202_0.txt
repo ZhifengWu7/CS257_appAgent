@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will navigate the user to a section displaying updates or activities from friends.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

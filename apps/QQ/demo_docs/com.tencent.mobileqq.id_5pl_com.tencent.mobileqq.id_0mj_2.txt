@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will allow the user to share a post or update.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
