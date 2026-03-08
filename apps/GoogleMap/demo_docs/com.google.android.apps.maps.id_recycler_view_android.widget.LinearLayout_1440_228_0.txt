@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will set the destination to a specific location on the map.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

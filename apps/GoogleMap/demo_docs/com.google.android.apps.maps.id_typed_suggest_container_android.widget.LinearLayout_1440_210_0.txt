@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will display the location details on a map.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

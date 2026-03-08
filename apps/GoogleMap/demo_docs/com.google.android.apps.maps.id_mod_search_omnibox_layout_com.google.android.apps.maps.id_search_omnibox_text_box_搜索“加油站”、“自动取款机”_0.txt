@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element opens a search interface for entering a location or query.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

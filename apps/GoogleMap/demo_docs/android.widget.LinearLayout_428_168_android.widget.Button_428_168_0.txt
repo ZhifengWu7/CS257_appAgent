@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will open the directions interface for navigating to the specified location.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
