@@ -154,6 +154,11 @@ while round_count < configs["MAX_ROUNDS"]:
         clickable_list = []
         focusable_list = []
         traverse_tree(xml_path, clickable_list, "clickable", True)
+
+        print("=== Clickable elements ===")
+        for i, elem in enumerate(clickable_list):
+            print(f"{i+1}. uid={elem.uid}, bbox={elem.bbox}")
+
         traverse_tree(xml_path, focusable_list, "focusable", True)
         elem_list = clickable_list.copy()
         for elem in focusable_list:
