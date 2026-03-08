@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element allows the user to enter or edit the subject of the email.', 'text': 'The UI element is used for the user to enter the subject of the email they are composing.', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

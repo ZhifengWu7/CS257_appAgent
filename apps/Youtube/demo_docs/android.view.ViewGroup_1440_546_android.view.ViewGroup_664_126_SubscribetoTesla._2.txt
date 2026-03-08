@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will subscribe the user to the channel.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

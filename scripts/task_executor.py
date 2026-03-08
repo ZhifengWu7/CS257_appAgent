@@ -138,10 +138,15 @@ def area_to_xy(area, subarea):
         x, y = x_0 + (width // cols) // 2, y_0 + (height // rows) // 2
     return x, y
 
+t_task_start = time.time()
+total_local, total_api, total_action = 0.0, 0.0, 0.0
 
 while round_count < configs["MAX_ROUNDS"]:
     round_count += 1
     print_with_color(f"Round {round_count}", "yellow")
+
+    t_local_start = time.time()
+
     screenshot_path = controller.get_screenshot(f"{dir_name}_{round_count}", task_dir)
     xml_path = controller.get_xml(f"{dir_name}_{round_count}", task_dir)
     if screenshot_path == "ERROR" or xml_path == "ERROR":
@@ -206,10 +211,22 @@ while round_count < configs["MAX_ROUNDS"]:
             elements you can interact on the screen. These docs are crucial for you to determine the target of your 
             next action. You should always prioritize these documented elements for interaction:""" + ui_doc
             prompt = re.sub(r"<ui_document>", ui_doc, prompts.task_template)
+    
+    t_local = time.time() - t_local_start
+    total_local += t_local
+    
     prompt = re.sub(r"<task_description>", task_desc, prompt)
     prompt = re.sub(r"<last_act>", last_act, prompt)
     print_with_color("Thinking about what to do in the next step...", "yellow")
+
+    t_api_start = time.time()
+
     status, rsp = mllm.get_model_response(prompt, [image])
+
+    t_api = time.time() - t_api_start
+    total_api += t_api
+
+    t_action_start = time.time()
 
     if status:
         with open(log_path, "a") as logfile:
@@ -287,6 +304,9 @@ while round_count < configs["MAX_ROUNDS"]:
     else:
         print_with_color(rsp, "red")
         break
+    
+    t_action = time.time() - t_action_start - configs['REQUEST_INTERVAL']
+    total_action += t_action
 
 if task_complete:
     print_with_color("Task completed successfully", "yellow")
@@ -294,3 +314,39 @@ elif round_count == configs["MAX_ROUNDS"]:
     print_with_color("Task finished due to reaching max rounds", "yellow")
 else:
     print_with_color("Task finished unexpectedly", "red")
+
+t_total = time.time() - t_task_start - round_count * configs["REQUEST_INTERVAL"]
+print_with_color("========== TIMING SUMMARY ==========", "cyan")
+print_with_color(f"Total rounds    : {round_count}", "cyan")
+denom = round_count if round_count > 0 else 1
+print_with_color(f"Total LOCAL     : {total_local:.3f}s  (avg {total_local/denom:.3f}s/round)", "cyan")
+print_with_color(f"Total API       : {total_api:.3f}s  (avg {total_api/denom:.3f}s/round)", "cyan")
+print_with_color(f"Total ACTION    : {total_action:.3f}s  (avg {total_action/denom:.3f}s/round)", "cyan")
+print_with_color(f"Total TIME      : {total_local+total_api+total_action:.3f}s", "cyan")
+# print_with_color(f"Total TIME      : {t_total:.3f}s", "cyan")
+print_with_color("====================================", "cyan")
+
+# 生成 GIF
+from PIL import Image
+import glob
+
+frames = []
+img_paths = sorted(
+    glob.glob(os.path.join(task_dir, "*_labeled.png")),
+    key=lambda x: int(re.search(r'_(\d+)_labeled', x).group(1))
+)
+for img_path in img_paths:
+    img = Image.open(img_path).convert("RGB")
+    img = img.resize((img.width // 4, img.height // 4))  # 缩小避免GIF太大
+    frames.append(img)
+
+if frames:
+    gif_path = os.path.join(task_dir, f"{dir_name}.gif")
+    frames[0].save(
+        gif_path,
+        save_all=True,
+        append_images=frames[1:],
+        duration=1500,  # 每帧1.5秒
+        loop=0
+    )
+    print_with_color(f"GIF saved to {gif_path}", "cyan")

@@ -1,4 +1,6 @@
-/apps/QQ/demos
-/apps/Youtube/demos
-/apps/GoogleMap/demos
+# /apps/QQ/demos
+# /apps/Youtube/demos
+# /apps/GoogleMap/demos
+/apps/*/demos
+/CS 257 Final Project Results.xlsx
 /tasks

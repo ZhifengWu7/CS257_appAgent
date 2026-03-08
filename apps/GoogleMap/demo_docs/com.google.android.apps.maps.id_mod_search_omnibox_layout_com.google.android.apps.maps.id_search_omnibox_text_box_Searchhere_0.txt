@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element allows the user to enter a search query or select a recent search location.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

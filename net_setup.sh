@@ -1,6 +1,6 @@
 #!/bin/bash
 # First: chmod +x net_setup.sh net_cleanup.sh net_verify.sh
-# Second: Usage: sudo ./net_setup.sh <delay_ms> <packet_loss_rate>, i.g., sudo ./net_setup.sh 200 0.10
+# Second: Usage: sudo ./net_setup.sh <delay_ms> <packet_loss_rate>, i.g., sudo ./net_setup.sh 200 0.05
 # Third: ./net_verify.sh
 # Fourth:  sudo ./net_cleanup.sh
 

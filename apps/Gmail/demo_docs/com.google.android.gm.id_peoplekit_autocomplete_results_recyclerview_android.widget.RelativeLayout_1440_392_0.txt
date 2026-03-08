@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element will add the suggested email address to the recipient field of the email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
