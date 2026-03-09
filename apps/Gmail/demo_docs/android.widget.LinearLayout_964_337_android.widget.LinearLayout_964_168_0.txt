@@ -1,1 +1,0 @@
-{'tap': 'Tapping this area allows the user to select or enter a starting location for navigation.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

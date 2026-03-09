@@ -1,1 +1,1 @@
-{'tap': 'Tapping the UI element reveals an option to assist the user in composing the email content.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': 'Tapping the UI element provides writing assistance for composing an email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

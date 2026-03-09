@@ -1,1 +1,1 @@
-{'tap': 'Tapping the UI element will open the email composition screen, allowing the user to create and send a new email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': 'Tapping the UI element opens the email composition screen, allowing the user to draft a new email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

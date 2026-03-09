@@ -1,0 +1,1 @@
+{'tap': 'Tapping the UI element adds the selected email address to the recipient field in the email composition screen.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

@@ -1,1 +1,1 @@
-{'tap': '', 'text': "The UI element is used for entering the recipient's email address when composing an email.", 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': '', 'text': 'The UI element is used for the user to input an email address to specify the recipient of the email.', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

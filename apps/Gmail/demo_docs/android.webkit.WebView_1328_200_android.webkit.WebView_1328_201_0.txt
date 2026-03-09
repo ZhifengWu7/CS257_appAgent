@@ -1,1 +1,1 @@
-{'tap': '', 'text': 'The UI element is used for composing the main body of the email message.', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': '', 'text': 'The UI element is used for the user to type the body of an email message.', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

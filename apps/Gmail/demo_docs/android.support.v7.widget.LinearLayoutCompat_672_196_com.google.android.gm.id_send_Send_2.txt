@@ -1,1 +1,1 @@
-{'tap': 'Tapping the UI element will send the composed email to the specified recipient.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': 'Tapping the UI element sends the email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

@@ -1,1 +1,1 @@
-{'tap': 'Tapping the UI element will add the suggested email address to the recipient field of the email.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
+{'tap': 'Tapping the UI element selects an email address from the suggestions to populate the recipient field.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

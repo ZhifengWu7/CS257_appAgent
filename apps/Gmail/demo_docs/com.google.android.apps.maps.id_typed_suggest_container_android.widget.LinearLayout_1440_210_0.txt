@@ -1,1 +1,0 @@
-{'tap': 'Tapping this area will display a list and map of nearby locations matching the search term.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}

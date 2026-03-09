@@ -1,1 +1,0 @@
-{'tap': 'Tapping the UI element will set the selected location as the starting point for navigation.', 'text': '', 'v_swipe': '', 'h_swipe': '', 'long_press': ''}
