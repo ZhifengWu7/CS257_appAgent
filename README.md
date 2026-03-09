@@ -1,3 +1,26 @@
+## CS257 Project Extension: Network-Aware Performance Evaluation
+
+This project extends [AppAgent](https://github.com/mnotgod96/AppAgent) 
+(MIT License) with network simulation capabilities to analyze 
+the impact of network conditions on cloud-based mobile UI agents.
+
+### Changes from Original AppAgent
+- Modified `scripts/task_executor.py`: added timing instrumentation 
+  (LOCAL / API / ACTION breakdown per round)
+- Added `net_setup.sh`, `net_cleanup.sh`, `net_verify.sh`: 
+  macOS network impairment scripts using dnctl + pfctl
+- Added GIF generation for task visualization
+- Run experiments: 9 tasks (3 apps × 3 tasks) under 3 network profiles (Good / Medium / Poor), collecting per-round timing logs and GIFs for each run
+
+### How to Reproduce Our Experiments
+1. `sudo ./net_setup.sh 200 0.01`  # Medium Network
+2. `python run.py`
+3. `sudo ./net_cleanup.sh`
+4. Repeat with 500/0.05 for Poor Network
+
+### Results
+Details Results are under CS 257 Final Project Results.xlsx.
+
 # [CHI 2025] AppAgent 
 
 <div align="center">
